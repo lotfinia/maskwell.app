@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · Maskwell</title>
+  <meta name="description" content="How Maskwell handles your data: it talks only to Fastmail, keeps your sign-in in your device’s Keychain, and collects nothing.">
+  <meta name="theme-color" content="#F7F7FA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B0B0F" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://maskwell.app/privacy/">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+    <symbol id="mask" viewBox="1.5 4 21 16"><path d="M12 6c-3.9 0-7.6.9-9.6 1.8-.5.2-.7.8-.5 1.3.7 2.2 1.6 5.6 4.6 6.6 2 .7 3.4-.5 4.2-1.7.4-.6.8-.9 1.3-.9s.9.3 1.3.9c.8 1.2 2.2 2.4 4.2 1.7 3-1 3.9-4.4 4.6-6.6.2-.5 0-1.1-.5-1.3C19.6 6.9 15.9 6 12 6Zm-4.8 5.9c-1 0-1.9-.6-2.3-1.3.9-.5 2.6-.8 3.7-.2.4.2.3.6.1.8-.4.4-.9.7-1.5.7Zm9.6 0c-.6 0-1.1-.3-1.5-.7-.2-.2-.3-.6.1-.8 1.1-.6 2.8-.3 3.7.2-.4.7-1.3 1.3-2.3 1.3Z"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html"><span class="app-icon" aria-hidden="true"><svg><use href="#mask"/></svg></span>Maskwell</a>
+      <nav aria-label="Site">
+        <a href="../privacy/index.html" aria-current="page">Privacy</a>
+        <a href="../terms/index.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated November 2, 2026</p>
+
+    <div class="summary">
+      <p><strong>The short version.</strong> Maskwell has no servers and collects nothing.</p>
+      <ul>
+        <li>The app talks only to Fastmail, to create and manage masked emails in your account.</li>
+        <li>Your Fastmail sign-in stays in your device’s Keychain. It isn’t synced or backed up, and we never receive it.</li>
+        <li>Maskwell can’t read, send or delete your mail. It asks Fastmail only for access to masked emails.</li>
+        <li>No analytics, no advertising, no tracking, in the app or on this website.</li>
+      </ul>
+    </div>
+
+    <p>This policy covers the Maskwell app for Mac and iPhone, including its Safari extension, widgets, controls, Share Sheet action, Shortcuts actions and command-line tool, and this website, maskwell.app. Maskwell is made by Parallel Leaf LLC, a Florida limited liability company (“Parallel Leaf”, “we”, “us”).</p>
+
+    <h2>What Maskwell sends, and to whom</h2>
+    <p>Maskwell connects only to Fastmail’s API (<code>api.fastmail.com</code> and the regional servers beneath it), over HTTPS. It refuses connections to any other host. It never sends anything to us or to any other third party.</p>
+    <p>When you create a masked email, Maskwell sends Fastmail:</p>
+    <ul>
+      <li>the site the address is for, as its origin only (for example <code>https://example.com</code>), never the full page address, path or anything on the page;</li>
+      <li>a description and an address prefix, but only if you type them.</li>
+    </ul>
+    <p>When you view or change addresses, Maskwell fetches your masked emails from Fastmail and sends the changes you make, such as a new description or blocking an address. Fastmail stores your masked emails; its handling of them is governed by <a href="https://www.fastmail.com/policies/privacy/">Fastmail’s privacy policy</a>.</p>
+
+    <h2>Your Fastmail sign-in</h2>
+    <p>You sign in with Fastmail through its own sign-in page (OAuth). Maskwell never sees your Fastmail password. The access it receives is limited to masked emails; it cannot read, send or delete mail, or see your contacts.</p>
+    <p>The tokens Fastmail issues are kept in the Keychain on your device, marked so they are not synced to iCloud or included in backups. Only Maskwell’s own parts on that device can read them. They are never given to the Safari extension’s web code, written to logs, or copied to the clipboard. Signing out removes them and asks Fastmail to revoke them. You can also revoke Maskwell’s access at any time in Fastmail’s settings.</p>
+
+    <h2>The Safari extension</h2>
+    <p>To place its button in email fields, the extension looks at the pages you visit to find sign-up forms. This happens in Safari on your device. Page content is not stored and is not sent anywhere; the only thing the extension passes to the app is the site’s origin, and only when you ask it to create or find an address. Safari asks you which websites the extension may run on, and you can change that in Safari’s settings at any time.</p>
+
+    <h2>What stays on your device</h2>
+    <ul>
+      <li><strong>Clipboard.</strong> New addresses are copied to the clipboard so you can paste them. On Apple devices signed in to the same Apple Account, Universal Clipboard may make them available on your other devices.</li>
+      <li><strong>Preferences.</strong> Settings such as appearance, accent color and app icon are stored on your device.</li>
+      <li><strong>Widgets.</strong> Widgets fetch what they show directly from Fastmail on your device.</li>
+      <li><strong>Logs.</strong> Maskwell records only the names of actions and error codes in the system log on your device, never tokens, addresses or Fastmail’s responses.</li>
+    </ul>
+
+    <h2>Purchases</h2>
+    <p>Purchases are handled by Apple through the App Store. We don’t receive your name, payment details or Apple Account. Apple’s handling of that information is covered by Apple’s privacy policy.</p>
+
+    <h2>Diagnostics</h2>
+    <p>Maskwell includes no analytics or crash-reporting code. If you choose to share analytics with app developers in your device’s settings, Apple may give us anonymous crash reports and usage statistics. You can turn this off in Settings › Privacy &amp; Security › Analytics &amp; Improvements.</p>
+
+    <h2>This website</h2>
+    <p>maskwell.app uses no cookies, analytics, advertising or third-party scripts. Like any website, its hosting provider may briefly keep standard server logs, such as IP addresses and the pages requested, to operate and protect the site.</p>
+
+    <h2>If you email us</h2>
+    <p>If you write to us, we use your email address and message only to reply, and keep them only as long as needed for that.</p>
+
+    <h2>Children</h2>
+    <p>Maskwell is not directed at children and collects no information from anyone, including children.</p>
+
+    <h2>Your rights</h2>
+    <p>Because we hold no personal data from the app, there is nothing for us to access, correct, export or delete. Your masked emails live in your Fastmail account, where you can manage or delete them, and you can remove everything Maskwell keeps on a device by signing out and deleting the app. Masked emails you created remain in your Fastmail account after you delete Maskwell.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If Maskwell’s handling of data changes, for example to support other email providers, we will update this page and the date at the top before the change ships.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about privacy: <a href="mailto:support@maskwell.app">support@maskwell.app</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Parallel Leaf LLC</p>
+      <nav aria-label="Legal">
+        <a href="../privacy/index.html">Privacy Policy</a>
+        <a href="../terms/index.html">Terms of Use</a>
+        <a href="mailto:support@maskwell.app">support@maskwell.app</a>
+      </nav>
+      <p class="fine">Fastmail is a trademark of Fastmail Pty Ltd. Maskwell is an independent app, not made or endorsed by Fastmail. Mac, iPhone, Safari and App Store are trademarks of Apple Inc.</p>
+    </div>
+  </footer>
+</body>
+</html>

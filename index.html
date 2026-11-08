@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maskwell: A Fastmail address for every site</title>
+  <meta name="description" content="Maskwell creates a Fastmail masked email right in the sign-up form, in Safari on Mac and iPhone. Coming soon to the App Store.">
+  <meta name="theme-color" content="#F7F7FA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B0B0F" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maskwell.app/">
+  <meta property="og:title" content="Maskwell">
+  <meta property="og:description" content="A different Fastmail address for every site, right in the sign-up form. Coming soon for Mac and iPhone.">
+  <meta property="og:image" content="https://maskwell.app/og-icon.png">
+  <link rel="canonical" href="https://maskwell.app/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+    <symbol id="mask" viewBox="1.5 4 21 16"><path d="M12 6c-3.9 0-7.6.9-9.6 1.8-.5.2-.7.8-.5 1.3.7 2.2 1.6 5.6 4.6 6.6 2 .7 3.4-.5 4.2-1.7.4-.6.8-.9 1.3-.9s.9.3 1.3.9c.8 1.2 2.2 2.4 4.2 1.7 3-1 3.9-4.4 4.6-6.6.2-.5 0-1.1-.5-1.3C19.6 6.9 15.9 6 12 6Zm-4.8 5.9c-1 0-1.9-.6-2.3-1.3.9-.5 2.6-.8 3.7-.2.4.2.3.6.1.8-.4.4-.9.7-1.5.7Zm9.6 0c-.6 0-1.1-.3-1.5-.7-.2-.2-.3-.6.1-.8 1.1-.6 2.8-.3 3.7.2-.4.7-1.3 1.3-2.3 1.3Z"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="app-icon" aria-hidden="true"><svg><use href="#mask"/></svg></span>Maskwell</a>
+      <nav aria-label="Site">
+        <a href="privacy/index.html">Privacy</a>
+        <a href="terms/index.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <span class="app-icon" aria-hidden="true"><svg><use href="#mask"/></svg></span>
+          <p class="badge">Coming soon to the App Store</p>
+          <h1>A different Fastmail address for every site.</h1>
+          <p class="lede">Maskwell makes a Fastmail masked email right in the sign-up form, fills it in, and copies it, in Safari on your Mac and iPhone. No trip to Fastmail’s settings, no switching apps.</p>
+          <p class="meta">For Mac and iPhone · Requires a Fastmail account</p>
+        </div>
+
+        <div class="demo" role="img" aria-label="A sign-up form in Safari. Maskwell’s mask button sits in the email field, which now holds a new masked email, and a notice says it was copied and tagged with the site.">
+          <div class="demo-bar" aria-hidden="true">
+            <div class="demo-dots"><span></span><span></span><span></span></div>
+            <div class="demo-url"><span>example.com</span></div>
+          </div>
+          <div class="demo-body" aria-hidden="true">
+            <p class="demo-title">Create your account</p>
+            <div class="field">
+              <span class="field-label">Name</span>
+              <div class="field-box"><span class="field-value">Alex Morgan</span></div>
+            </div>
+            <div class="field">
+              <span class="field-label">Email</span>
+              <div class="field-box focus">
+                <span class="field-value typed">quiet.fox1234@fastmail.com</span>
+                <span class="mask-button"><svg><use href="#mask"/></svg></span>
+              </div>
+            </div>
+            <div class="field">
+              <span class="field-label">Password</span>
+              <div class="field-box"><span class="field-value dots-value">••••••••••</span></div>
+            </div>
+            <div class="demo-submit"></div>
+          </div>
+          <div class="toast" aria-hidden="true">
+            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2 5 8.6 9.6 3.6"/></svg></span>
+            Copied <small>· tagged example.com</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <h2 id="features-title">Made for the moment you sign up</h2>
+        <div class="grid">
+          <article class="card">
+            <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="3"/><path d="M7 12h6"/><path d="M17 10v4"/></svg></span>
+            <h3>Right in the form</h3>
+            <p>Click the mask in an email field. Maskwell creates the address, tags it with the site, fills it in and puts it on your clipboard.</p>
+          </article>
+          <article class="card">
+            <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8.7"/><path d="M20 4v4.7h-4.7"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 15.3"/><path d="M4 20v-4.7h4.7"/></svg></span>
+            <h3>One per site, not one per visit</h3>
+            <p>If you already have an address for the site, Maskwell offers it before making another.</p>
+          </article>
+          <article class="card">
+            <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/></svg></span>
+            <h3>Wherever you need one</h3>
+            <p>Widgets, Control Center, the Action button, the Share Sheet and Shortcuts on iPhone; the Services menu, AppleScript and the command line on the Mac.</p>
+          </article>
+          <article class="card">
+            <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v5.5c0 4.3 3 8 7 9.5 4-1.5 7-5.2 7-9.5V6l-7-3Z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg></span>
+            <h3>Private by design</h3>
+            <p>Maskwell talks only to Fastmail. Your sign-in stays in your device’s Keychain, and it can’t read your mail. We never see your addresses.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Parallel Leaf LLC</p>
+      <nav aria-label="Legal">
+        <a href="privacy/index.html">Privacy Policy</a>
+        <a href="terms/index.html">Terms of Use</a>
+        <a href="mailto:support@maskwell.app">support@maskwell.app</a>
+      </nav>
+      <p class="fine">Fastmail is a trademark of Fastmail Pty Ltd. Maskwell is an independent app, not made or endorsed by Fastmail. Mac, iPhone, Safari and App Store are trademarks of Apple Inc.</p>
+    </div>
+  </footer>
+</body>
+</html>
