@@ -1,0 +1,14 @@
+{
+  "client_id": "https://www.maskwell.app/oauth/client.json",
+  "client_name": "Maskwell",
+  "client_uri": "https://www.maskwell.app/",
+  "logo_uri": "https://www.maskwell.app/og-icon.png",
+  "tos_uri": "https://www.maskwell.app/terms/",
+  "policy_uri": "https://www.maskwell.app/privacy/",
+  "redirect_uris": ["com.parallelleaf.maskwell:/oauth/callback"],
+  "grant_types": ["authorization_code", "refresh_token"],
+  "response_types": ["code"],
+  "token_endpoint_auth_method": "none",
+  "scope": "urn:ietf:params:jmap:core https://www.fastmail.com/dev/maskedemail",
+  "software_id": "com.parallelleaf.maskwell"
+}
